@@ -38,7 +38,6 @@ LIVE_SYSTEM = True
 ALLOWED_HOSTS = [
     'localhost', 'covid-19.bhp.org.bw', '127.0.0.1']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -63,12 +62,14 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.sites.middleware.CurrentSiteMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'edc_dashboard.middleware.DashboardMiddleware',
+    'edc_subject_dashboard.middleware.DashboardMiddleware',
 ]
 
 ROOT_URLCONF = 'covid_19.urls'
@@ -91,30 +92,24 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'covid_19.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 mysql_config = configparser.ConfigParser()
 mysql_config.read(os.path.join(ETC_DIR, APP_NAME, 'mysql.ini'))
 
-HOST = mysql_config['mysql']['host']
-DB_USER = mysql_config['mysql']['user']
-DB_PASSWORD = mysql_config['mysql']['password']
-DB_NAME = mysql_config['mysql']['database']
-PORT = mysql_config['mysql']['port']
+# HOST = mysql_config['mysql']['host']
+# DB_USER = mysql_config['mysql']['user']
+# DB_PASSWORD = mysql_config['mysql']['password']
+# DB_NAME = mysql_config['mysql']['database']
+# PORT = mysql_config['mysql']['port']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': DB_NAME,
-        'USER': DB_USER,
-        'PASSWORD': DB_PASSWORD,
-        'HOST': HOST,   # Or an IP Address that your DB is hosted on
-        'PORT': PORT,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -160,7 +155,6 @@ USE_I18N = True
 USE_L10N = False
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
