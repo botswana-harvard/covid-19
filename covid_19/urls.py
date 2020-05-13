@@ -19,7 +19,7 @@ from django.contrib import admin
 from django.contrib.auth.views import LogoutView
 from django.urls import path, include
 
-from covid19_register.admin_site import covid19_register_admin 
+from covid19_register.admin_site import covid19_register_admin
 from .views import AdministrationView, HomeView
 
 
