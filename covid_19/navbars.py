@@ -49,9 +49,9 @@ covid_19_sites.append_item(
 
 covid_19_sites.append_item(
     NavbarItem(
-        name='hr',
-        title='Human Resources',
-        label='HR',
+        name='Finance & HR',
+        title='Finnace & Human Resources',
+        label='Finace & HR',
         url_name=settings.DASHBOARD_URL_NAMES.get(
             'hr_listboard_url')))
 
