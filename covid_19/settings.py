@@ -146,7 +146,7 @@ DASHBOARD_URL_NAMES = {
     'hr_listboard_url': 'covid19_register:hr_listboard_url',
     'pepfar_listboard_url': 'covid19_register:pepfar_listboard_url',
     'tsepamo_listboard_url': 'covid19_register:tsepamo_listboard_url',
-    'mmabane_listboard_url': 'covid19_register:mmabane_listboard_url',
+    'mmabana_listboard_url': 'covid19_register:mmabana_listboard_url',
 }
 
 LAB_DASHBOARD_URL_NAMES = {}

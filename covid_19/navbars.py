@@ -12,7 +12,7 @@ covid_19.append_item(
         label='Visitor',
         fa_icon='fa-user-plus',
         url_name=settings.DASHBOARD_URL_NAMES.get(
-            'visitor_listboard_url')))
+            'ctu_listboard_url')))
 
 covid_19.append_item(
     NavbarItem(
@@ -50,7 +50,7 @@ covid_19_sites.append_item(
 covid_19_sites.append_item(
     NavbarItem(
         name='Finance & HR',
-        title='Finnace & Human Resources',
+        title='Finace & Human Resources',
         label='Finace & HR',
         url_name=settings.DASHBOARD_URL_NAMES.get(
             'hr_listboard_url')))
@@ -77,7 +77,7 @@ covid_19_sites.append_item(
         title='Mmabana',
         label='Mmabana',
         url_name=settings.DASHBOARD_URL_NAMES.get(
-            'mmabane_listboard_url')))
+            'mmabana_listboard_url')))
 
 site_navbars.register(covid_19)
 site_navbars.register(covid_19_sites)
