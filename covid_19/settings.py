@@ -140,6 +140,7 @@ AUTH_PASSWORD_VALIDATORS = [
 DASHBOARD_URL_NAMES = {
     'visitor_listboard_url': 'covid19_register:visitor_listboard_url',
     'employee_listboard_url': 'covid19_register:employee_listboard_url',
+    'bhp_hq_listboard_url': 'covid19_register:bhp_hq_listboard_url',
     'ctu_listboard_url': 'covid19_register:ctu_listboard_url',
     'hptn_listboard_url': 'covid19_register:hptn_listboard_url',
     'ambition_listboard_url': 'covid19_register:ambition_listboard_url',
@@ -155,6 +156,7 @@ DASHBOARD_BASE_TEMPLATES = {
     'listboard_base_template': 'covid19_register/base.html',
     'visitor_listboard_template': 'covid19_register/listboard.html',
     'employee_listboard_template': 'covid19_register/listboard.html',
+    'bhp_hq_listboard_template': 'covid19_register/listboard.html',
     'ctu_listboard_template': 'covid19_register/listboard.html',
 }
 

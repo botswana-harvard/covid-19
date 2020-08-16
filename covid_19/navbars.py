@@ -21,7 +21,15 @@ covid_19.append_item(
         label='Employee',
         fa_icon='fa-user-plus',
         url_name=settings.DASHBOARD_URL_NAMES.get(
-            'ctu_listboard_url')))
+            'bhp_hq_listboard_url')))
+
+covid_19_sites.append_item(
+    NavbarItem(
+        name='BHP HQ',
+        title='BHP HQ',
+        label='BHP HQ',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'bhp_hq_listboard_url')))
 
 covid_19_sites.append_item(
     NavbarItem(
