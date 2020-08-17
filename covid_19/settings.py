@@ -148,6 +148,14 @@ DASHBOARD_URL_NAMES = {
     'pepfar_listboard_url': 'covid19_register:pepfar_listboard_url',
     'tsepamo_listboard_url': 'covid19_register:tsepamo_listboard_url',
     'mmabana_listboard_url': 'covid19_register:mmabana_listboard_url',
+    'ambition_visitor_listboard_url': 'covid19_register:ambition_visitor_listboard_url',
+    'bhp_hq_visitor_listboard_url': 'covid19_register:bhp_hq_visitor_listboard_url',
+    'ctu_visitor_listboard_url': 'covid19_register:ctu_visitor_listboard_url',
+    'hptn_visitor_listboard_url': 'covid19_register:hptn_visitor_listboard_url',
+    'hr_visitor_listboard_url': 'covid19_register:hr_visitor_listboard_url',
+    'mmabana_visitor_listboard_url': 'covid19_register:mmabana_visitor_listboard_url',
+    'pepfar_visitor_listboard_url': 'covid19_register:pepfar_visitor_listboard_url',
+    'tsepamo_visitor_listboard_url': 'covid19_register:tsepamo_visitor_listboard_url',
 }
 
 LAB_DASHBOARD_URL_NAMES = {}

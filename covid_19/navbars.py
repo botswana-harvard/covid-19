@@ -12,7 +12,7 @@ covid_19.append_item(
         label='Visitor',
         fa_icon='fa-user-plus',
         url_name=settings.DASHBOARD_URL_NAMES.get(
-            'ctu_listboard_url')))
+            'bhp_hq_visitor_listboard_url')))
 
 covid_19.append_item(
     NavbarItem(
@@ -25,7 +25,7 @@ covid_19.append_item(
 
 covid_19_sites.append_item(
     NavbarItem(
-        name='BHP HQ',
+        name='bhp_hq',
         title='BHP HQ',
         label='BHP HQ',
         url_name=settings.DASHBOARD_URL_NAMES.get(
@@ -57,9 +57,9 @@ covid_19_sites.append_item(
 
 covid_19_sites.append_item(
     NavbarItem(
-        name='Finance & HR',
-        title='Finace & Human Resources',
-        label='Finace & HR',
+        name='hr_finance',
+        title='Finance & Human Resources',
+        label='Finance & HR',
         url_name=settings.DASHBOARD_URL_NAMES.get(
             'hr_listboard_url')))
 
@@ -87,5 +87,72 @@ covid_19_sites.append_item(
         url_name=settings.DASHBOARD_URL_NAMES.get(
             'mmabana_listboard_url')))
 
+covid19_visitor = Navbar(name='covid19_visitor')
+
+covid19_visitor.append_item(
+    NavbarItem(
+        name='bhp_hq_visitor',
+        title='BHP HQ',
+        label='BHP HQ',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'bhp_hq_visitor_listboard_url')))
+
+covid19_visitor.append_item(
+    NavbarItem(
+        name='ambition_visitor',
+        title='Ambition',
+        label='Ambition',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'ambition_visitor_listboard_url')))
+
+covid19_visitor.append_item(
+    NavbarItem(
+        name='ctu_visitor',
+        title='CTU',
+        label='CTU',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'ctu_visitor_listboard_url')))
+
+covid19_visitor.append_item(
+    NavbarItem(
+        name='hptn_visitor',
+        title='HPTN',
+        label='HPTN',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'hptn_visitor_listboard_url')))
+
+covid19_visitor.append_item(
+    NavbarItem(
+        name='finance_hr_visitor',
+        title='Finance & Human Resources',
+        label='Finance & HR',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'hr_visitor_listboard_url')))
+
+covid19_visitor.append_item(
+    NavbarItem(
+        name='mmabana_visitor',
+        title='Mmabana',
+        label='Mmabana',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'mmabana_visitor_listboard_url')))
+
+covid19_visitor.append_item(
+    NavbarItem(
+        name='pepfar_visitor',
+        title='PEPFAR',
+        label='PEPFAR',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'pepfar_visitor_listboard_url')))
+
+covid19_visitor.append_item(
+    NavbarItem(
+        name='tsepamo_visitor',
+        title='Tsepamo',
+        label='Tsepamo',
+        url_name=settings.DASHBOARD_URL_NAMES.get(
+            'tsepamo_visitor_listboard_url')))
+
 site_navbars.register(covid_19)
 site_navbars.register(covid_19_sites)
+site_navbars.register(covid19_visitor)
