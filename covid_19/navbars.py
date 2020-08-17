@@ -25,7 +25,7 @@ covid_19.append_item(
 
 covid_19_sites.append_item(
     NavbarItem(
-        name='BHP HQ',
+        name='bhp_hq',
         title='BHP HQ',
         label='BHP HQ',
         url_name=settings.DASHBOARD_URL_NAMES.get(
@@ -57,7 +57,7 @@ covid_19_sites.append_item(
 
 covid_19_sites.append_item(
     NavbarItem(
-        name='Finance & HR',
+        name='finance_hr',
         title='Finance & Human Resources',
         label='Finance & HR',
         url_name=settings.DASHBOARD_URL_NAMES.get(
