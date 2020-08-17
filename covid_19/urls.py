@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from covid19_register.admin_site import covid19_register_admin
 from django.apps import apps as django_apps
 from django.conf import settings
 from django.conf.urls.static import static
@@ -20,11 +21,9 @@ from django.contrib import admin
 from django.contrib.auth.views import LogoutView
 from django.urls import path, include
 
-from covid19_register.admin_site import covid19_register_admin
 from .views import AdministrationView, HomeView
 
-
-app_name = 'covid19_register'
+app_name = 'covid_19'
 app_config = django_apps.get_app_config(app_name)
 
 urlpatterns = [
