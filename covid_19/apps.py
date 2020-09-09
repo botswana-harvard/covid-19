@@ -9,5 +9,5 @@ class AppConfig(DjangoAppConfig):
 
 
 class EdcBaseAppConfig(BaseEdcBaseAppConfig):
-    project_name = 'BHP Covid-19 Register'
+    project_name = 'BHP C19-R'
     institution = 'Botswana-Harvard AIDS Institute'
